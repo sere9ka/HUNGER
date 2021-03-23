@@ -1,0 +1,143 @@
+*
+    margin: 0
+    box-sizing: border-box
+
+html
+    font-size: 12px
+    font-family: Open Sans
+
+.container
+    max-width: 1280px
+    width: 100%
+    margin: auto
+//общая настройка кнопок
+.button
+    color: #ffffff
+    border-radius: 5px
+    outline: none
+    border: none
+    cursor: pointer
+    &--primary
+        background: #E8C300
+    &--secondary
+        background: transparent
+        border: 1px solid rgba(255, 255, 255, 0.2)
+
+//настройка секции HEADER
+.header
+    background-color: transparent
+    position: relative
+    z-index: 2
+    &__menu
+        width: 100%
+        display: flex
+        justify-content: space-between
+
+        &__item
+            font-size: 1rem
+            padding: 50px 25px
+            text-decoration: none
+            color: #ffffff
+
+    &__logo
+        margin-top: 25px
+        margin-left: 35px
+        margin-right: 35px
+
+
+//настройка блока HERO
+
+.hero
+    position: relative 
+    margin-top: -179px
+    background: url('../img/header-bg.jpg') no-repeat center / cover
+    padding-top: 326px
+    padding-bottom: 225px
+    color: #ffffff
+    //кнопка внизу секции hero
+    &::before
+        position: absolute
+        bottom: 113px
+        left: 50%
+        margin-left: -20px
+        content: ''
+        width: 40px
+        height: 40px
+        background: #ffffff url('../img/down-btn.svg') no-repeat center
+        border-radius: 50%
+    &::after
+        position: absolute
+        bottom: 102px
+        left: 50%
+        margin-left: -31px
+        content: ''
+        width: 60px
+        height: 60px
+        border: 1px solid rgba(255, 255, 255, 0.2)
+        border-radius: 50%
+    //блок в секции hero
+    &__block
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+    //перевернутая надпись
+    &__timetable__block
+        transform: rotate(-90deg)
+    //блок с заголовками и кнопками
+    &__info__block
+        display: flex
+        flex-direction: column
+        align-items: center
+    //подзаголовок(сверху)
+    &__subtitle
+        font-weight: bold
+        line-height: 1.166rem
+        margin-bottom: 2rem
+    //заголовок
+    &__title
+        position: relative
+        font-family: Banny Round
+        text-transform: uppercase
+        font-size: 8rem
+        //черточка под заголовком
+        &::before
+            position: absolute
+            bottom: -30px
+            left: 50%
+            margin-left: -30px
+            content: ''
+            width: 60px
+            height: 5px
+            background: #E8C300
+            border-radius: 50px
+    //блок с кнопками hero
+    &__buttons
+        max-width: 440px
+        width: 100%
+        display: flex
+        justify-content: space-between
+        margin-top: 5rem
+    //кнопки в секции hero
+    &__button
+        width: 200px
+        height: 60px
+    //повернутые иконки соц.сетей
+    &__social-links
+        display: flex
+        transform: rotate(-90deg)
+    &__social-link
+        width: 60px
+        height: 60px
+        border: 1px solid rgba(255, 255, 255, 0.2)
+        border-radius: 50%
+        margin-bottom: 20px
+        margin: 0 10px 0 10px
+        transform: rotate(90deg)
+    &__insta
+        background: url('../img/inst.svg') no-repeat center
+    &__facebook
+        background: url('../img/facebook.svg') no-repeat center
+    &__twitter
+        background: url('../img/twitter.svg') no-repeat center
+        
